@@ -1,31 +1,43 @@
 # YT2VM©: YouTube to VM
 
-The project is finally out!
+A lightweight Python project that connects YouTube-related workflows to a virtual machine setup. It is designed to help automate VM-based tasks, stream management, and control flows in a simple and open-source way.
 
 # What does it do?
 
-E
+YT2VM is a project that brings together several tools to make a VM-centered YouTube workflow easier to manage. It can be used to:
+
+- Start and control virtual machines using VirtualBox
+- Connect with OBS for stream or scene automation
+- Interface with chat-driven tools using `pytchat`
+- Run a lightweight web-based control layer with Flask
+- Support cross-platform usage across Windows, macOS, and Linux
+
+In short, this project is meant to help automate the parts of a YouTube or streaming workflow that are usually managed through a VM environment, making setup and control more convenient.
 
 # Installation and Dependencies
 
-For working with this script, one needs to install several Python packages. This can be easily done by using the following command in your terminal:
+For working with this script, you need to install several Python packages. This can be done with the following command in your terminal:
 
+```bash
 pip install virtualbox Flask pytchat obsws-python pywin32
+```
 
-Attention: pywin32 works on Windows only and should be installed if you use the script on Windows.
+Attention: `pywin32` works on Windows only and should be installed if you use the script on Windows.
 
 # Features
 
-Cross-Platform: Supports Windows, macOS, and Linux.
+- Cross-Platform: Supports Windows, macOS, and Linux.
+- Open-Source: Full source code is open to everyone.
+- VM Integration: Designed to work with VirtualBox-powered environments.
+- OBS Support: Can integrate with OBS WebSocket for automation.
+- Flask-Based Control: Includes a lightweight Python web interface.
 
-Open-Source: Full code is open to everyone.
+# FAQ
 
-FAQ
+## Do I have to credit you?
 
-# Do I have to credit you?
+No. It is free to use forever.
 
-No. free to use forever now
+## Is this script malware?
 
-# Is this script malware?
-
-No, never. All source codes are open to everyone, so you can look through the files. There are no stealers or any other malware in this repo.
+No. All source code is open to everyone, so you can inspect it yourself. There are no stealers or malicious components in this repository.
