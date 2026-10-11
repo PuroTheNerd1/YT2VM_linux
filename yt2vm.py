@@ -8668,11 +8668,15 @@ class ChatPlaysApp:
             if len(p) == 2: vm.drag(safe_int(p[0], 0, -5000, 5000), safe_int(p[1], 0, -5000, 5000))
         elif base == "run" and len(arg) > self.RUN_BOX_MAX:
             plog("TYPE", f"!run is {len(arg)} chars - the Windows Run box stops at ~259, sending it through a cmd window instead")
-            vm.key_combo("win+r"); time.sleep(0.7); vm.type_text("cmd"); vm.press_key("enter")
+            vm.key_combo("ctrl+alt+t"); time.sleep(0.7); vm.type_text("cmd"); vm.press_key("enter")
             time.sleep(1.2); vm.type_text(arg); vm.press_key("enter")
             base = "cmd"
         elif base == "run":
-            vm.key_combo("win+r"); time.sleep(0.7); vm.type_text(arg); vm.press_key("enter")
+            vm.key_combo("ctrl+alt+t"); time.sleep(0.7); vm.type_text(arg); vm.press_key("enter")
+        elif base == "lock":
+            vm.key_combo("ctrl+alt+l");
+        elif base == "minimize":
+            vm.key_combo("win+d");
         elif base == "cmd":
             vm.key_combo("win+r"); time.sleep(0.7); vm.type_text("cmd"); vm.press_key("enter")
             time.sleep(1.2); vm.type_text(arg); vm.press_key("enter")
